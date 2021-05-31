@@ -1,4 +1,4 @@
-#CBP: Constrained backpropagation based on a pseudo-Lagrange multiplier method
+# CBP: Constrained backpropagation based on a pseudo-Lagrange multiplier method
 
 ## Overview
 
