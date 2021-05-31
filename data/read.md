@@ -1,1 +1,15 @@
-The defining characteristic of the proposed CBP algorithm is the utilization of a Lagrangian function (loss function plus constraint function) as its objective function. We considered various types of constraints — binary, ternary, one-bit shift, and two-bit shift weight constraints. For all cases, the proposed algorithm outperforms the state-of-the-art methods on ImageNet, e.g., 66.6\% and 74.4\% top-1 accuracy for ResNet-18 and ResNet-50 with binary weights, respectively. This highlights CBP as a learning algorithm to address diverse constraints with the minimal performance loss by employing appropriate constraint functions.
+## data
+Download the [ImageNet](https://image-net.org/challenges/LSVRC/2012/) dataset and decompress into the structure like
+```bash
+dir/
+  data/
+      imagenet/
+        train/
+          n01440764/
+            n01440764_10026.JPEG
+        ...
+        val/
+          n01440764/
+            ILSVRC2012_val_00000001.JPEG
+        ...
+```
