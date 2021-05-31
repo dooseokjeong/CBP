@@ -13,7 +13,7 @@ This package provides the training code of CBP: Constrained backpropagation base
 ```bash
 pip install --extra-index-url https://developer.download.nvidia.com/compute/redist --upgrade nvidia-dali-cuda110
 ```
-## Train and evaluation
+## Train
 Download the [ImageNet](https://image-net.org/challenges/LSVRC/2012/) dataset and decompress into the structure like
 ```bash
 dir/
@@ -52,7 +52,7 @@ You should obtain the following results:
 | ResNet-18 |   66.6%  |   68.9%  |    69.4%   |    69.4%   |
 | ResNet-50 |   74.4%  |   75.0%  |    76.0%   |    75.9%   |
 
-
+## Evaluation
 You can evaluate the pre-quantized model using the following command:
 ```bash
 python evaluate.py [--model] [--quant]
