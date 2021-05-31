@@ -1,9 +1,11 @@
-# Overview
+# CBP: Constrained backpropagation based on a pseudo-Lagrange multiplier method
+
+## Overview
 
 This package provides the training code of CBP: Constrained backpropagation based on a pseudo-Lagrange multiplier method. The defining characteristic of the CBP algorithm is the utilization of a Lagrangian function (loss function plus constraint function) as its objective function. We considered various types of constraints — binary, ternary, one-bit shift, and two-bit shift weight constraints. For all cases, the proposed algorithm outperforms the state-of-the-art methods on ImageNet, e.g., 66.6\% and 74.4\% top-1 accuracy for ResNet-18 and ResNet-50 with binary weights, respectively. This highlights CBP as a learning algorithm to address diverse constraints with the minimal performance loss by employing appropriate constraint functions.
 
 
-### Run environment
+## Run environment
 
 + Python 3.6.9
 + Pytorch 1.7
