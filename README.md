@@ -45,16 +45,20 @@ optional arguments:
 --lr                           initial learning rate of network parameters (default: 0.001)
 --lr_lambda                 update rate of lagrangian multiplier (default: 0.0001)
 --weight_decay            L2-regularization (default: 0.0001)
-    
+
+Note that to train AlexNet, you should download [alexnet_pretrained.pth](https://drive.google.com/drive/folders/1oey86qHAGvl6YScrjH7KmWKEw3Deev0m?usp=sharing) from the link and put it into model folder.
 
 You should obtain the following results:
 | Model      |   Binary  | Ternary  | 1-bit shift | 2-bit shift |
 |-------------|:---------:|:----------:|:-----------:|:-----------:|
 | AlexNet     |   58.0%  |   58.8%  |    60.8%   |    60.9%   |
 | ResNet-18 |   66.6%  |   68.9%  |    69.4%   |    69.4%   |
-| ResNet-50 |   74.4%  |   75.0%  |    76.0%   |    75.9%   |
+| ResNet-50 |   74.4%  |   75.0%  |    76.0%   |    76.0%   |
 
 ## Evaluation
+
+Before evaluating pre-quantized models, you should download the [pre-quantized models](https://drive.google.com/drive/folders/1oey86qHAGvl6YScrjH7KmWKEw3Deev0m?usp=sharing) and put them into **model** folder.
+
 You can evaluate the pre-quantized model using the following command:
 ```bash
 python evaluate.py [--model] [--quant]
