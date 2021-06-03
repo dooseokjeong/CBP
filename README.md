@@ -12,7 +12,7 @@ To install requirements:
 pip install -r requirements.txt
 ```
 + NVIDIA-DALI
-- We have used [NVIDIA-DALI](https://docs.nvidia.com/deeplearning/sdk/dali-developer-guide/docs/index.html) to implement fast dataloaders.
+We have used [NVIDIA-DALI](https://docs.nvidia.com/deeplearning/sdk/dali-developer-guide/docs/index.html) to implement fast dataloaders.
 You can install it as follows.
 ```bash
 pip install --extra-index-url https://developer.download.nvidia.com/compute/redist --upgrade nvidia-dali-cuda110==0.23
