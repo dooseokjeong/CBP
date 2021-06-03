@@ -7,13 +7,15 @@ This package provides the training code of CBP: Constrained backpropagation base
 
 ## Run environment
 
-+ Python 3.6.9
-+ Pytorch 1.7
+To install requirements:
+```bash
+pip install -r requirements.txt
+```
 + NVIDIA-DALI
     We have used [NVIDIA-DALI](https://docs.nvidia.com/deeplearning/sdk/dali-developer-guide/docs/index.html) to implement fast dataloaders.
     You can install it as follows.
 ```bash
-pip install --extra-index-url https://developer.download.nvidia.com/compute/redist --upgrade nvidia-dali-cuda110
+pip install --extra-index-url https://developer.download.nvidia.com/compute/redist --upgrade nvidia-dali-cuda110==0.23
 ```
 ## Train
 Download the [ImageNet](https://image-net.org/challenges/LSVRC/2012/) dataset and decompress into the structure like
