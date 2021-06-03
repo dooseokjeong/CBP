@@ -15,7 +15,7 @@ pip install -r requirements.txt
 We have used [NVIDIA-DALI](https://docs.nvidia.com/deeplearning/sdk/dali-developer-guide/docs/index.html) to implement fast dataloaders.
 You can install it as follows.
 ```bash
-pip install --extra-index-url https://developer.download.nvidia.com/compute/redist --upgrade nvidia-dali-cuda110==0.23
+pip install --extra-index-url https://developer.download.nvidia.com/compute/redist --upgrade nvidia-dali-cuda110
 ```
 ## Train
 Download the [ImageNet](https://image-net.org/challenges/LSVRC/2012/) dataset and decompress into the structure like
