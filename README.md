@@ -48,7 +48,8 @@ optional arguments:
 --lr_lambda                 update rate of lagrangian multiplier (default: 0.0001)
 --weight_decay            L2-regularization (default: 0.0001)
 
-Note that to train AlexNet, you should download [alexnet_pretrained.pth](https://drive.google.com/drive/folders/1oey86qHAGvl6YScrjH7KmWKEw3Deev0m?usp=sharing) from the link and put it into model folder.
+Note that to train AlexNet, you should download [alexnet_pretrained.pth](https://drive.google.com/drive/folders/1oey86qHAGvl6YScrjH7KmWKEw3Deev0m?usp=sharing) from the link and put it into model folder. 
+Note that we used initial learning rate of 1e-4 for 1-bit shift and 2-bit shift quantization of AlexNet and ResNet-50.
 
 You should obtain the following results:
 | Model      |   Binary  | Ternary  | 1-bit shift | 2-bit shift |
@@ -69,7 +70,7 @@ optional arguments:
 --model                     quantized model (default: resnet18, option: alexnet, resnet18, resnet50)
 --quant                     quantization constraint (default: bin, option: bin, ter, 1bit, 2bit)
 
-Note that we used initial learning rate of 1e-4 for 1-bit shift and 2-bit shift quantization of AlexNet and ResNet-50.
+
 
 Disclaimer: Preliminary work. Under review by the 35th Conference on 
 Neural Information Processing Systems (NeurIPS 2021). Do not distribute.
